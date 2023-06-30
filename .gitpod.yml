@@ -1,0 +1,8 @@
+tasks:
+  - init: npm install @medusajs/medusa-cli -g
+    command: medusa new my-medusa-store --seed
+  
+  - init: cd my-medusa-store
+    command: medusa develop
+
+image: gitpod/workspace-postgres
